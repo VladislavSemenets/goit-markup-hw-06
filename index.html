@@ -375,18 +375,20 @@
 						</li>
 					</ul>
 				</div>
-								<form class="email-send-form">
+				<form class="email-send-form">
 					<label class="subscribe-send">
 						<span class="subscribe">Subscribe</span>
-					<input type="email" name="user_mail" class="email-send" placeholder="E-mail">
-				</label>
+						<span class="form-input-btn">
+						<input type="email" name="user_mail" class="email-send" placeholder="E-mail" />
+						<button class="subscribe-btn" type="send"
+					>Subscribe<svg class="send-mail-svg" width="24" height="20">
+						<use href="./images/icons.svg.svg#icon-send-email"></use>
+					</svg>
+				</button>
+			</span>
+					</label>
 				</form>
-				<div class="container-btn">
-			<button class="subscribe-btn" type="send">Subscribe<svg class="send-mail-svg" width="24" height="20">
-				<use href="./images/icons.svg.svg#icon-send-email"></use>
-			</svg>
-		</button>
-	</div>
+				
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
@@ -437,10 +439,10 @@
 						<textarea name="user_comment" class="modal-form-message" placeholder="Text input"></textarea>
 					</label>
 
-					<label class="modal-form-check-desc">
-						<input type="checkbox" name="user_policy" class="modal-form-check is-hidden" placeholder="Text input" />
+					<label for="policy" class="modal-form-check-desc">
+						<input type="checkbox" id='policy' name="user_policy" class="modal-form-check" placeholder="Text input" />
 						<span class="custom-click"></span>
-							
+
 						<span class="modal-form-input-desc"
 							>I accept the terms and conditions of the <a href="" class="privacy-btn">Privacy Policy</a></span
 						>
