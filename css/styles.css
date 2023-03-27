@@ -416,6 +416,10 @@ img {
 	padding: 100px 0;
 }
 
+.subscribe-send {
+	
+}
+
 .footer-first {
 }
 .footer-link {
@@ -552,6 +556,11 @@ img {
 	margin-left: 24px;
 	color: #ffffff;
 	transition: background var(--time-func), border var(--time-func);
+}
+
+.form-input-btn {
+	display: flex;
+	align-items: center;
 }
 
 .subscribe-btn:hover,
@@ -852,7 +861,14 @@ color: #2E2F42;
 .modal-form-check {
 	position: absolute;
 	opacity: 0;
+	appearance: none; 
 }
+
+.modal-form-check:focus + .custom-click {
+    border-color: var(--background-btn-color);
+}
+
+
 .modal-form-submit {
 	margin: 0 auto;
 	width: 169px;
