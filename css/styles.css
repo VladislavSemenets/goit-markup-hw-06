@@ -236,7 +236,7 @@ img {
 /* ----feauters---- */
 
 .features {
-	padding: 120px 0;
+	padding-top: 120px;
 }
 
 .fetures-item {
@@ -417,7 +417,6 @@ img {
 }
 
 .subscribe-send {
-	
 }
 
 .footer-first {
@@ -521,10 +520,16 @@ img {
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	background: #2e2f42;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	padding-left: 16px;
+	transform: border var(--time-func);
 }
 
 .email-send::placeholder {
-	padding-left: 16px;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 2;
@@ -532,10 +537,9 @@ img {
 	color: #ffffff;
 }
 
-.email_send:focus {
+.email-send:focus {
 	outline: none;
 	border: 1px solid #4d5ae5;
-	border-radius: 4px;
 }
 
 .subscribe-btn {
@@ -765,12 +769,12 @@ img {
 
 .form-description {
 	font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-text-align: center;
-margin-bottom: 16px;
-letter-spacing: 0.02em;
-color: #2E2F42;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 16px;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
 }
 
 .modal-form {
@@ -861,13 +865,12 @@ color: #2E2F42;
 .modal-form-check {
 	position: absolute;
 	opacity: 0;
-	appearance: none; 
+	appearance: none;
 }
 
 .modal-form-check:focus + .custom-click {
-    border-color: var(--background-btn-color);
+	border-color: var(--background-btn-color);
 }
-
 
 .modal-form-submit {
 	margin: 0 auto;
@@ -885,7 +888,6 @@ color: #2E2F42;
 	transition: color var(--time-func), background-color var(--time-func), box-shadow var(--time-func),
 		border var(--time-func);
 }
-
 
 .modal-form-submit:hover,
 .modal-form-submit:focus {
